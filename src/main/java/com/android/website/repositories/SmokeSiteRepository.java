@@ -6,4 +6,5 @@ import com.android.website.beans.SmokeSite;
 
 public interface SmokeSiteRepository extends CrudRepository<SmokeSite, String> {
 
+	public SmokeSite findByPollutionName(String pollutionName);
 }

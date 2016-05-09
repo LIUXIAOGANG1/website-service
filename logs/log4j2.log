@@ -1134,3 +1134,19 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token
 2016-05-09 12:28:09 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
 2016-05-09 12:28:09 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
 2016-05-09 12:28:10 [INFO] [Thread-3] GenericApplicationContext.doClose(873) | Closing org.springframework.context.support.GenericApplicationContext@25d250c6: startup date [Mon May 09 12:28:06 CST 2016]; root of context hierarchy
+2016-05-09 21:40:46 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/F:/workspace/bibased/website-service/target/classes/applicationContext.xml]
+2016-05-09 21:40:47 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/F:/workspace/bibased/website-service/target/classes/META-INF/spring-context.xml]
+2016-05-09 21:40:48 [INFO] [main] GenericApplicationContext.prepareRefresh(513) | Refreshing org.springframework.context.support.GenericApplicationContext@725dab5f: startup date [Mon May 09 21:40:48 CST 2016]; root of context hierarchy
+2016-05-09 21:40:48 [INFO] [main] PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [F:\workspace\bibased\website-service\target\classes\properties\database.properties]
+2016-05-09 21:40:48 [INFO] [main] AutowiredAnnotationBeanPostProcessor.<init>(141) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-09 21:40:48 [INFO] [main] LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(332) | Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-05-09 21:40:49 [INFO] [main] LogHelper.logPersistenceUnitInformation(46) | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-09 21:40:49 [INFO] [main] Version.logVersion(54) | HHH000412: Hibernate Core {4.3.8.Final}
+2016-05-09 21:40:49 [INFO] [main] Environment.<clinit>(239) | HHH000206: hibernate.properties not found
+2016-05-09 21:40:49 [INFO] [main] Environment.buildBytecodeProvider(346) | HHH000021: Bytecode provider name : javassist
+2016-05-09 21:40:49 [INFO] [main] Version.<clinit>(66) | HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-09 21:40:55 [INFO] [main] Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-09 21:40:55 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-05-09 21:40:55 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory

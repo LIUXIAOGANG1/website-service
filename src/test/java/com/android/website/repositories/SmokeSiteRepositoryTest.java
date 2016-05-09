@@ -23,4 +23,11 @@ public class SmokeSiteRepositoryTest {
 		String msg = JsonTools.createJsonString("SmokeSite", smokeSite);
 		System.out.println(msg);
 	}
+	
+	@Test
+	public void findByPollutionName(){
+		SmokeSite smokeSite = smokeSiteRepository.findByPollutionName("2#活性出口");
+		String msg = JsonTools.createJsonString("SmokeSite", smokeSite);
+		System.out.println(msg);
+	}
 }

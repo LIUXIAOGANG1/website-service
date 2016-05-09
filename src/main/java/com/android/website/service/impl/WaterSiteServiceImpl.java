@@ -40,7 +40,7 @@ public class WaterSiteServiceImpl implements WaterSiteService {
 	@Override
 	public List<WaterSite> findAll() {
 		logger.info("[WaterSiteServiceImpl] 调用 findAll()方法");
-		List<WaterSite> lists = (List)waterSiteRepository.findAll();
+		List<WaterSite> lists = (List<WaterSite>)waterSiteRepository.findAll();
 		logger.info("[WaterSiteServiceImpl] findAll 查询结果List<WaterSite>为: {}", lists);
 		
 		return lists;
