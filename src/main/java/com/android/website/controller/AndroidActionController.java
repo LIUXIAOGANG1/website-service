@@ -1,4 +1,4 @@
-package com.android.website.service.controller;
+package com.android.website.controller;
 
 import java.util.ArrayList;
 import java.util.List;
