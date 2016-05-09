@@ -11,6 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.android.website.beans.WaterSite;
 import com.android.website.repositories.WaterSiteRepository;
+import com.android.website.utils.JsonTools;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath*:applicationContext.xml"})
@@ -20,18 +21,24 @@ public class WaterSiteRepositoryTest {
 	private WaterSiteRepository waterSiteRepository;
 	
 	@Test
-	public void findById(){
-		WaterSite result = waterSiteRepository.findById(1);
-		System.out.println(result.toString());
+	public void findOne(){
+		WaterSite result = waterSiteRepository.findOne(1);
+		String msg = JsonTools.createJsonString("WaterSite", result);
+		System.out.println(msg);
 	}
 	
 	@Test
 	public void findAll(){
 		@SuppressWarnings("unchecked")
 		List<WaterSite> results = (List)waterSiteRepository.findAll();
-//		System.out.println(result.toString());
-		for(WaterSite result : results){
-			System.out.println(result.toString());
-		}
+		String msg = JsonTools.createJsonString("WaterSites", results);
+		System.out.println(msg);
+	}
+	
+	@Test
+	public void findBySite(){
+		WaterSite result = waterSiteRepository.findBySite("焦化外排");
+		String msg = JsonTools.createJsonString("WaterSite", result);
+		System.out.println(msg);
 	}
 }

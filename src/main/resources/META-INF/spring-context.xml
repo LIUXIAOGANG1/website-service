@@ -12,7 +12,7 @@
 	<!-- Scan this package and sub-packages for Annotated Controllers -->
     <context:component-scan base-package="com.android.website" />
 	
-	<jpa:repositories base-package="com.android.website.repository" />
+	<jpa:repositories base-package="com.android.website.repositories" />
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${database.driverClassName}"/>

@@ -13,8 +13,8 @@ public class WaterData {
 	private int id;////
 	private int waterSiteId;//
 	private Date samplingTime;//采样时间
-	private int airTemperature;//气温 (℃)
-	private int waterTemperature;//水温 (℃)
+	private String airTemperature;//气温 (℃)
+	private String waterTemperature;//水温 (℃)
 	private String PH;//
 	private String surface;//外观
 	private String totalSolids;//总固体 (mg/L)
@@ -50,7 +50,7 @@ public class WaterData {
 	private String mTotalHardness;//总硬度(mmol/L)
 	private String carbonateAlkalinity;//碳酸盐碱度(mol/L)
 	private String bicarbonateAlkalinity;//重碳酸盐碱度(mol/L)
-	private int turbidity;//浊度
+	private String turbidity;//浊度
 	public int getId() {
 		return id;
 	}
@@ -69,16 +69,16 @@ public class WaterData {
 	public void setSamplingTime(Date samplingTime) {
 		this.samplingTime = samplingTime;
 	}
-	public int getAirTemperature() {
+	public String getAirTemperature() {
 		return airTemperature;
 	}
-	public void setAirTemperature(int airTemperature) {
+	public void setAirTemperature(String airTemperature) {
 		this.airTemperature = airTemperature;
 	}
-	public int getWaterTemperature() {
+	public String getWaterTemperature() {
 		return waterTemperature;
 	}
-	public void setWaterTemperature(int waterTemperature) {
+	public void setWaterTemperature(String waterTemperature) {
 		this.waterTemperature = waterTemperature;
 	}
 	public String getPH() {
@@ -291,15 +291,15 @@ public class WaterData {
 	public void setBicarbonateAlkalinity(String bicarbonateAlkalinity) {
 		this.bicarbonateAlkalinity = bicarbonateAlkalinity;
 	}
-	public int getTurbidity() {
+	public String getTurbidity() {
 		return turbidity;
 	}
-	public void setTurbidity(int turbidity) {
+	public void setTurbidity(String turbidity) {
 		this.turbidity = turbidity;
 	}
 	@Override
 	public String toString() {
-		return "waterData [id=" + id + ", waterSiteId=" + waterSiteId + ", samplingTime=" + samplingTime
+		return "WaterData [id=" + id + ", waterSiteId=" + waterSiteId + ", samplingTime=" + samplingTime
 				+ ", airTemperature=" + airTemperature + ", waterTemperature=" + waterTemperature + ", PH=" + PH
 				+ ", surface=" + surface + ", totalSolids=" + totalSolids + ", dissolvedSolids=" + dissolvedSolids
 				+ ", seston=" + seston + ", sulfide=" + sulfide + ", phenol=" + phenol + ", totalHardness="

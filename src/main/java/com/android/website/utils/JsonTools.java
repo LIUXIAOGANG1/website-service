@@ -3,10 +3,6 @@ package com.android.website.utils;
 import net.sf.json.JSONObject;
 
 public class JsonTools {
-	public JsonTools() {
-		// TODO Auto-generated constructor stub
-	}
-
 	/**
 	 * @param key
 	 *            ： JSON 名值对中的的名字
