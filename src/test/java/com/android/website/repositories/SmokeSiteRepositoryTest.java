@@ -40,4 +40,12 @@ public class SmokeSiteRepositoryTest {
 		
 		System.out.println(msg);
 	}
+	
+	@Test
+	public void findByFactoryAndPollution(){
+		SmokeSite smokeSite = smokeSiteRepository.findByFactoryAndPollution("耐火公司", "100m2回转窑出口");
+		String msg = JsonTools.createJsonString("SmokeSite", smokeSite);
+		
+		System.out.println(msg);
+	}
 }

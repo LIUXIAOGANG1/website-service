@@ -1,12 +1,11 @@
-package com.android.website.service;
+package com.android.website.persistences;
 
 import java.util.Date;
 import java.util.List;
 
 import com.android.website.beans.WaterData;
 
-public interface WaterDataService {
-	
+public interface WaterDataPersistence {
 	public WaterData findone(int id);
 	
 	public List<WaterData> findByWaterSiteId(int waterSiteId);

@@ -20,4 +20,7 @@ public interface SmokeSiteRepository extends CrudRepository<SmokeSite, String> {
 	public List<String> getPollutionByFactory(@Param("factoryName")String factoryName);
 
 	public SmokeSite findByPollutionName(String pollutionName);
+	
+	@Query("FROM smokeSite s where s.factoryName = :factoryName AND s.pollutionName = :pollutionName")
+	public SmokeSite findByFactoryAndPollution(@Param("factoryName")String factoryName, @Param("pollutionName")String pollutionName);
 }

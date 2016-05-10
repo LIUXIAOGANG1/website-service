@@ -41,4 +41,11 @@ public class WaterSiteRepositoryTest {
 		String msg = JsonTools.createJsonString("WaterSite", result);
 		System.out.println(msg);
 	}
+	
+	@Test
+	public void findAllSit(){
+		List<String> sites = waterSiteRepository.findAllSit();
+		String msg = JsonTools.createJsonString("sites", sites);
+		System.out.println(msg);
+	}
 }

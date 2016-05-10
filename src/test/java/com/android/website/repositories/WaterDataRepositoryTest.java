@@ -41,8 +41,8 @@ public class WaterDataRepositoryTest {
 	public void findBySiteIdAndTime() throws ParseException{
 		DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 		Date start = format.parse("1998-01-01 00:00:00");
-		Date end = format.parse("1999-03-09 00:00:00");
-		List<WaterData> waterDatas = waterDataRepository.findBySiteIdAndTime(12, start, end);
+		Date end = format.parse("2000-03-09 00:00:00");
+		List<WaterData> waterDatas = waterDataRepository.findBySiteIdAndTime(12, start, end, 0);
 		String msg = JsonTools.createJsonString("WaterDatas", waterDatas);
 		System.out.println(msg);
 	}

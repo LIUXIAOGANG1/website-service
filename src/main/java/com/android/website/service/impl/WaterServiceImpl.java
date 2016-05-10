@@ -1,0 +1,59 @@
+package com.android.website.service.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import com.android.website.beans.WaterData;
+import com.android.website.beans.WaterSite;
+import com.android.website.persistences.WaterDataPersistence;
+import com.android.website.persistences.WaterSitePersistence;
+import com.android.website.service.WaterService;
+import com.android.website.utils.ConvertString2Date;
+
+@Service
+public class WaterServiceImpl implements WaterService {
+	private static final Logger logger = LoggerFactory.getLogger(WaterServiceImpl.class);
+
+	@Resource
+	private WaterDataPersistence waterDataPersistence;
+	
+	@Resource
+	private WaterSitePersistence waterSitePersistence;
+
+	@Override
+	public List<String> findAllSit() {
+		logger.info("[WaterServiceImpl] 调用 findAllSit()方法");
+		List<String> sites = waterSitePersistence.findAllSit();
+		logger.info("[WaterServiceImpl] findAllSit 查询结果List<String>为: {}", sites);
+		
+		return sites;
+	}
+
+	@Override
+	public List<WaterData> findByQuery(String site, String startTime, String endTime, int page) {
+		logger.info("[WaterServiceImpl] 调用 findByQuery() 传入参数site: {}, startTime: {}, endTime: {}, page: {}", site, startTime, endTime, page);
+		
+		if(StringUtils.isBlank(site) || StringUtils.isBlank(startTime) || StringUtils.isBlank(endTime) || page < 1){
+			logger.info("[WaterServiceImpl] 调用 findByQuery() 传入参数site: {}, startTime: {}, endTime: {}, page: {} 不符合规则，返回 null。", site, startTime, endTime, page);
+			return null;
+		}
+		
+		WaterSite waterSite = waterSitePersistence.findBySite(site);
+		if(waterSite == null){
+			logger.info("[WaterServiceImpl] 调用 findByQuery() 传入参数site: {} 没有对应的 WaterSite 存在，返回null。", site);
+			return null;
+		}
+		
+		Date start = ConvertString2Date.string2Date(startTime);
+		Date end = ConvertString2Date.string2Date(endTime);
+		
+		return null;
+	}
+}
