@@ -8,6 +8,9 @@ import javax.annotation.Resource;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import com.android.website.beans.WaterData;
@@ -38,9 +41,10 @@ public class WaterServiceImpl implements WaterService {
 
 	@Override
 	public List<WaterData> findByQuery(String site, String startTime, String endTime, int page) {
+		int pageSize = 10;
 		logger.info("[WaterServiceImpl] 调用 findByQuery() 传入参数site: {}, startTime: {}, endTime: {}, page: {}", site, startTime, endTime, page);
 		
-		if(StringUtils.isBlank(site) || StringUtils.isBlank(startTime) || StringUtils.isBlank(endTime) || page < 1){
+		if(StringUtils.isBlank(site) || StringUtils.isBlank(startTime) || StringUtils.isBlank(endTime) || page < 0){
 			logger.info("[WaterServiceImpl] 调用 findByQuery() 传入参数site: {}, startTime: {}, endTime: {}, page: {} 不符合规则，返回 null。", site, startTime, endTime, page);
 			return null;
 		}
@@ -53,7 +57,11 @@ public class WaterServiceImpl implements WaterService {
 		
 		Date start = ConvertString2Date.string2Date(startTime);
 		Date end = ConvertString2Date.string2Date(endTime);
+		Pageable pageable = new PageRequest(page, pageSize, Direction.ASC, "id");
 		
-		return null;
+		List<WaterData> list = waterDataPersistence.findBySiteIdAndTime(waterSite.getId(), start, end, pageable);
+		logger.info("[WaterServiceImpl] 调用 findByQuery() 传入参数site: {}, startTime: {}, endTime: {}, page: {}, 查询结果为List<WaterData> : {}", site, startTime, endTime, page, list);
+		
+		return list;
 	}
 }
