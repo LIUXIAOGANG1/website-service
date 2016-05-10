@@ -1,5 +1,7 @@
 package com.android.website.repositories;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -21,6 +23,21 @@ public class SmokeSiteRepositoryTest {
 	public void findOne(){
 		SmokeSite smokeSite = smokeSiteRepository.findOne("0101");
 		String msg = JsonTools.createJsonString("SmokeSite", smokeSite);
+		System.out.println(msg);
+	}
+	
+	@Test
+	public void getAllFactory(){
+		List<String> list = smokeSiteRepository.getAllFactory();
+		String msg = JsonTools.createJsonString("list", list);
+		System.out.println(msg);
+	}
+	
+	@Test
+	public void getPollutionByFactory(){
+		List<String> list = smokeSiteRepository.getPollutionByFactory("耐火公司");
+		String msg = JsonTools.createJsonString("list", list);
+		
 		System.out.println(msg);
 	}
 }
