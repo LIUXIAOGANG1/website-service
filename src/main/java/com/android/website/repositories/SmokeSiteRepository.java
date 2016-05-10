@@ -19,4 +19,5 @@ public interface SmokeSiteRepository extends CrudRepository<SmokeSite, String> {
 	@Query("SELECT pollutionName FROM smokeSite s where s.factoryName = :factoryName")
 	public List<String> getPollutionByFactory(@Param("factoryName")String factoryName);
 
+	public SmokeSite findByPollutionName(String pollutionName);
 }
