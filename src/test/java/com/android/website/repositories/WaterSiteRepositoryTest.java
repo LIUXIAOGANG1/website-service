@@ -29,8 +29,7 @@ public class WaterSiteRepositoryTest {
 	
 	@Test
 	public void findAll(){
-		@SuppressWarnings("unchecked")
-		List<WaterSite> results = (List)waterSiteRepository.findAll();
+		List<WaterSite> results = (List<WaterSite>)waterSiteRepository.findAll();
 		String msg = JsonTools.createJsonString("WaterSites", results);
 		System.out.println(msg);
 	}

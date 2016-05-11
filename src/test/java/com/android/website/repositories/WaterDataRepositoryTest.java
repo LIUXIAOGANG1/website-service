@@ -10,6 +10,10 @@ import javax.annotation.Resource;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -39,11 +43,14 @@ public class WaterDataRepositoryTest {
 	
 	@Test
 	public void findBySiteIdAndTime() throws ParseException{
+		Pageable pageable = new PageRequest(0, 10, Direction.ASC, "id");
 		DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); 
 		Date start = format.parse("1998-01-01 00:00:00");
 		Date end = format.parse("2000-03-09 00:00:00");
-		List<WaterData> waterDatas = waterDataRepository.findBySiteIdAndTime(12, start, end, 0);
-		String msg = JsonTools.createJsonString("WaterDatas", waterDatas);
+		Page<WaterData> page = waterDataRepository.findBySiteIdAndTime(12, start, end, pageable);
+		List<WaterData> results = page.getContent();
+		String msg = JsonTools.createJsonString("WaterDatas", results);
+		System.out.println(results.size());
 		System.out.println(msg);
 	}
 }
