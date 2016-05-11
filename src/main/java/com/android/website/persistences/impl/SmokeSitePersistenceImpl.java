@@ -6,13 +6,13 @@ import javax.annotation.Resource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.annotation.Persistent;
+import org.springframework.stereotype.Service;
 
 import com.android.website.beans.SmokeSite;
 import com.android.website.persistences.SmokeSitePersistence;
 import com.android.website.repositories.SmokeSiteRepository;
 
-@Persistent
+@Service
 public class SmokeSitePersistenceImpl implements SmokeSitePersistence {
 	private static final Logger logger = LoggerFactory.getLogger(SmokeSitePersistenceImpl.class);
 	

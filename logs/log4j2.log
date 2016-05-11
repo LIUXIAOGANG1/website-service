@@ -2271,3 +2271,321 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token
 2016-05-10 22:03:19 [INFO] [main] Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2016-05-10 22:03:19 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
 2016-05-10 22:03:19 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
+2016-05-11 18:18:29 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/applicationContext.xml]
+2016-05-11 18:18:30 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/META-INF/spring-context.xml]
+2016-05-11 18:18:30 [INFO] [main] GenericApplicationContext.prepareRefresh(513) | Refreshing org.springframework.context.support.GenericApplicationContext@6b26e945: startup date [Wed May 11 18:18:30 CST 2016]; root of context hierarchy
+2016-05-11 18:18:31 [INFO] [main] PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [D:\workspace\github\website-service\target\classes\properties\database.properties]
+2016-05-11 18:18:31 [INFO] [main] AutowiredAnnotationBeanPostProcessor.<init>(141) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-11 18:18:31 [INFO] [main] LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(332) | Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-05-11 18:18:31 [INFO] [main] LogHelper.logPersistenceUnitInformation(46) | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-11 18:18:31 [INFO] [main] Version.logVersion(54) | HHH000412: Hibernate Core {4.3.8.Final}
+2016-05-11 18:18:31 [INFO] [main] Environment.<clinit>(239) | HHH000206: hibernate.properties not found
+2016-05-11 18:18:31 [INFO] [main] Environment.buildBytecodeProvider(346) | HHH000021: Bytecode provider name : javassist
+2016-05-11 18:18:31 [INFO] [main] Version.<clinit>(66) | HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-11 18:18:33 [INFO] [main] Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-11 18:18:33 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-05-11 18:18:33 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
+2016-05-11 18:18:34 [INFO] [main] LocalContainerEntityManagerFactoryBean.destroy(462) | Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-05-11 18:18:34 [ERROR] [main] TestContextManager.prepareTestInstance(334) | Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@723ed581] to prepare test instance [com.android.website.repositories.WaterDataRepositoryTest@6b760460]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:331) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:670) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waterQualityController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waterServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.android.website.persistences.WaterDataPersistence] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waterServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.android.website.persistences.WaterDataPersistence] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1017) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.android.website.persistences.WaterDataPersistence] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1103) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:963) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1017) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 25 more
+2016-05-11 18:21:08 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/applicationContext.xml]
+2016-05-11 18:21:09 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/META-INF/spring-context.xml]
+2016-05-11 18:21:09 [INFO] [main] GenericApplicationContext.prepareRefresh(513) | Refreshing org.springframework.context.support.GenericApplicationContext@6b26e945: startup date [Wed May 11 18:21:09 CST 2016]; root of context hierarchy
+2016-05-11 18:21:09 [INFO] [main] PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [D:\workspace\github\website-service\target\classes\properties\database.properties]
+2016-05-11 18:21:09 [INFO] [main] AutowiredAnnotationBeanPostProcessor.<init>(141) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-11 18:21:09 [INFO] [main] LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(332) | Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-05-11 18:21:09 [INFO] [main] LogHelper.logPersistenceUnitInformation(46) | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-11 18:21:09 [INFO] [main] Version.logVersion(54) | HHH000412: Hibernate Core {4.3.8.Final}
+2016-05-11 18:21:09 [INFO] [main] Environment.<clinit>(239) | HHH000206: hibernate.properties not found
+2016-05-11 18:21:09 [INFO] [main] Environment.buildBytecodeProvider(346) | HHH000021: Bytecode provider name : javassist
+2016-05-11 18:21:09 [INFO] [main] Version.<clinit>(66) | HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-11 18:21:11 [INFO] [main] Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-11 18:21:11 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-05-11 18:21:11 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
+2016-05-11 18:21:12 [INFO] [main] LocalContainerEntityManagerFactoryBean.destroy(462) | Closing JPA EntityManagerFactory for persistence unit 'default'
+2016-05-11 18:21:12 [ERROR] [main] TestContextManager.prepareTestInstance(334) | Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3ae9d1e2] to prepare test instance [com.android.website.repositories.WaterDataRepositoryTest@41522537]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:331) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:213) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:290) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:?]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:292) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:?]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:?]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:?]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176) [spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:670) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waterQualityController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waterServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.android.website.persistences.WaterDataPersistence] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 25 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waterServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.android.website.persistences.WaterDataPersistence] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1017) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.android.website.persistences.WaterDataPersistence] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1103) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:963) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1017) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:858) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:442) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:420) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:545) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:703) ~[spring-beans-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-4.0.6.RELEASE.jar:4.0.6.RELEASE]
+	... 25 more
+2016-05-11 18:23:55 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/applicationContext.xml]
+2016-05-11 18:23:55 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/META-INF/spring-context.xml]
+2016-05-11 18:23:55 [INFO] [main] GenericApplicationContext.prepareRefresh(513) | Refreshing org.springframework.context.support.GenericApplicationContext@7a69b07: startup date [Wed May 11 18:23:55 CST 2016]; root of context hierarchy
+2016-05-11 18:23:55 [INFO] [main] PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [D:\workspace\github\website-service\target\classes\properties\database.properties]
+2016-05-11 18:23:55 [INFO] [main] AutowiredAnnotationBeanPostProcessor.<init>(141) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-11 18:23:55 [INFO] [main] LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(332) | Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-05-11 18:23:55 [INFO] [main] LogHelper.logPersistenceUnitInformation(46) | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-11 18:23:55 [INFO] [main] Version.logVersion(54) | HHH000412: Hibernate Core {4.3.8.Final}
+2016-05-11 18:23:55 [INFO] [main] Environment.<clinit>(239) | HHH000206: hibernate.properties not found
+2016-05-11 18:23:55 [INFO] [main] Environment.buildBytecodeProvider(346) | HHH000021: Bytecode provider name : javassist
+2016-05-11 18:23:56 [INFO] [main] Version.<clinit>(66) | HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-11 18:23:57 [INFO] [main] Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-11 18:23:57 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-05-11 18:23:57 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
+2016-05-11 18:24:02 [INFO] [Thread-3] GenericApplicationContext.doClose(873) | Closing org.springframework.context.support.GenericApplicationContext@7a69b07: startup date [Wed May 11 18:23:55 CST 2016]; root of context hierarchy
+2016-05-11 18:24:19 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/applicationContext.xml]
+2016-05-11 18:24:19 [INFO] [main] XmlBeanDefinitionReader.loadBeanDefinitions(316) | Loading XML bean definitions from URL [file:/D:/workspace/github/website-service/target/classes/META-INF/spring-context.xml]
+2016-05-11 18:24:19 [INFO] [main] GenericApplicationContext.prepareRefresh(513) | Refreshing org.springframework.context.support.GenericApplicationContext@6b26e945: startup date [Wed May 11 18:24:19 CST 2016]; root of context hierarchy
+2016-05-11 18:24:19 [INFO] [main] PropertySourcesPlaceholderConfigurer.loadProperties(172) | Loading properties file from file [D:\workspace\github\website-service\target\classes\properties\database.properties]
+2016-05-11 18:24:19 [INFO] [main] AutowiredAnnotationBeanPostProcessor.<init>(141) | JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-05-11 18:24:19 [INFO] [main] LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(332) | Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-05-11 18:24:19 [INFO] [main] LogHelper.logPersistenceUnitInformation(46) | HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-05-11 18:24:19 [INFO] [main] Version.logVersion(54) | HHH000412: Hibernate Core {4.3.8.Final}
+2016-05-11 18:24:19 [INFO] [main] Environment.<clinit>(239) | HHH000206: hibernate.properties not found
+2016-05-11 18:24:19 [INFO] [main] Environment.buildBytecodeProvider(346) | HHH000021: Bytecode provider name : javassist
+2016-05-11 18:24:20 [INFO] [main] Version.<clinit>(66) | HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-11 18:24:21 [INFO] [main] Dialect.<init>(145) | HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-05-11 18:24:21 [INFO] [main] LobCreatorBuilder.useContextualLobCreation(97) | HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-05-11 18:24:21 [INFO] [main] ASTQueryTranslatorFactory.<init>(47) | HHH000397: Using ASTQueryTranslatorFactory
+2016-05-11 18:24:23 [INFO] [Thread-3] GenericApplicationContext.doClose(873) | Closing org.springframework.context.support.GenericApplicationContext@6b26e945: startup date [Wed May 11 18:24:19 CST 2016]; root of context hierarchy

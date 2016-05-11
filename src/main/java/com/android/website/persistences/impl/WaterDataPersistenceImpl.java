@@ -7,15 +7,15 @@ import javax.annotation.Resource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.annotation.Persistent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import com.android.website.beans.WaterData;
 import com.android.website.persistences.WaterDataPersistence;
 import com.android.website.repositories.WaterDataRepository;
 
-@Persistent
+@Service
 public class WaterDataPersistenceImpl implements WaterDataPersistence {
 	private static final Logger logger = LoggerFactory.getLogger(WaterDataPersistenceImpl.class);
 	
